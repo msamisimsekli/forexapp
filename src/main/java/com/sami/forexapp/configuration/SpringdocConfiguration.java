@@ -14,7 +14,7 @@ public class SpringdocConfiguration {
 
 	@Bean
 	public GroupedOpenApi api() {
-		return GroupedOpenApi.builder().group("springshop-public").pathsToMatch("/*").build();
+		return GroupedOpenApi.builder().group("forexapp").pathsToMatch("/*").build();
 
 	}
 
