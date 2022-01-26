@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "2a79368d-d9a7-4e97-8768-b9bb6eb80f60",
+		"name": "ForexApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Exchange Rate Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8181/exchangeRate?base=USD&symbol=TRY",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"exchangeRate"
+					],
+					"query": [
+						{
+							"key": "base",
+							"value": "USD"
+						},
+						{
+							"key": "symbol",
+							"value": "TRY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conversion Request 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"base\": \"USD\",\r\n   \"symbol\": \"EUR\",\r\n   \"amount\": 15 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8181/conversion",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"conversion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conversion Request 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"base\": \"USD\",\r\n   \"symbol\": \"TRY\",\r\n   \"amount\": 10 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8181/conversion",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"conversion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Conversions Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8181/conversion/getAll?pageIndex=0&pageSize=5",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"conversion",
+						"getAll"
+					],
+					"query": [
+						{
+							"key": "pageIndex",
+							"value": "0"
+						},
+						{
+							"key": "pageSize",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Conversion By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8181/conversion/getById?id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"conversion",
+						"getById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Conversions By Date Between",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8181/conversion/getBetween?beginDate=2022-01-25T11:05:49.942686&endDate=2022-01-25T11:05:52.419553&pageIndex=0&pageSize=5",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"conversion",
+						"getBetween"
+					],
+					"query": [
+						{
+							"key": "beginDate",
+							"value": "2022-01-25T11:05:49.942686"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-01-25T11:05:52.419553"
+						},
+						{
+							"key": "pageIndex",
+							"value": "0"
+						},
+						{
+							"key": "pageSize",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
