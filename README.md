@@ -9,7 +9,7 @@ There are 1 domain model classes
 
 There are 2 controller
 
-1. ExchangeRateController - Able to get exchange rate between base adn symbol currencies. Uses api.exchangeratesapi.io/v1/. Since I have apikey for free plan, I send a base request to get all currencies based on EUR
+1. ExchangeRateController - Able to get exchange rate between base and symbol currencies. Uses api.exchangeratesapi.io/v1/. Since I have apikey for free plan, I send a base request to get all currencies based on EUR
 2. ConversionController - Able to handle new incoming conversion request, returning conversion(s) with pages and filter them between dates.
 
 ### Technology Stack
