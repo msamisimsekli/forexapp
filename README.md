@@ -28,3 +28,7 @@ After navigating the folder where Dockerfile exists, you can run these commands 
 ### Postman Requests
 
 They can be found in the file `ForexApp.postman_collection`
+
+### Springdoc
+
+Can be found at localhost:8080/swagger-ui.html
