@@ -31,4 +31,4 @@ They can be found in the file `ForexApp.postman_collection`
 
 ### Springdoc
 
-Can be found at localhost:8080/swagger-ui.html
+Can be found at localhost:8181/swagger-ui.html
